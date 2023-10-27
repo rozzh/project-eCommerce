@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./css/payment.css">
+  </head>
+  <body>
+
+    <!-- start header -->
+    <header>
+      <!-- container -->
+      <div class="container">
+        
+        <!-- top header -->
+        <div class="top-header">
+          <!-- logo -->
+          <div class="t-h-logo">
+            <a href="./index.html">
+              <img src="./img/Logo.png" alt="logo">luminae
+            </a>
+          </div>
+
+          <!-- search -->
+          <form action="#">
+            <input type="search" name="product" id="product" placeholder="Search Producs">
+            <div>
+              <label for="categories">All Categories</label>
+              <img src="./img/icon/Search.svg" alt="search icon">
+              <select name="categories" id="categories">
+                <option value="v1">Cat 1</option>
+                <option value="v2">Cat 2</option>
+                <option value="v3">Cat 3</option>
+              </select>
+            </div>
+          </form>
+
+          <!-- navigation -->
+          <nav>
+            <ul>
+              <li>about us</li>
+              <li>blog</li>
+              <li>contact us</li>
+              <li>help &amp; support</li>
+            </ul>
+          </nav>
+          <!-- social media -->
+          <div class="t-h-social">
+            <a href="#"><img src="./img/icon/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="./img/icon/FB.svg" alt="facebook"></a>
+            <a href="#"><img src="./img/icon/telegram.svg" alt="telegram"></a>
+          </div>
+        </div>
+
+        <!-- bottom header -->
+        <div class="bottom-header">
+          <!-- bottom header start -->
+          <div class="b-h-start">
+            <!-- FIXME is it button , anchor or just Div  -->
+            <div>
+              <img src="./img/icon/categories.svg" alt="cat icon">
+              <p>categories</p>
+            </div>
+            <form action="#">
+              <select name="currency" id="currency">
+                <option value="c1">USD</option>
+                <option value="c2">EUR</option>
+                <option value="c3">EGP</option>
+              </select>
+              <select name="language" id="language">
+                <option value="l1">English</option>
+                <option value="l2">Arabic</option>
+                <option value="l3">Russian</option>
+              </select>
+            </form>
+          </div>
+          <!-- bottom header center -->
+          <div class="b-h-center">
+            <div><img src="./img/Men cosmetic.png" alt="men cosmetic"></div>
+            <p>
+              <span>Weekly Men's Toiletries Coupons.</span>
+              We extend exclusive discounts to our male clientele
+            </p>
+          </div>
+          <!-- bottom header end -->
+          <div class="b-h-end">
+            <a href="#">
+              <img src="./img/icon/Sign in.svg" alt="sign in">
+              <p>sing in</p>
+            </a>
+            <a href="#">
+              <img src="./img/icon/Favorides.svg" alt="heart">
+              <p>favorites</p>
+            </a>
+            <a href="./cart.html">
+              <img src="./img/icon/Card.svg" alt="card">
+              <p>card</p>
+              <div>3</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start section 1 -->
+    <section class="sec1">
+      <div class="container">
+        <!-- breadcrumbs menu -->
+        <div class="bc-menu">
+          <a href="./index.html">homepage</a>
+          <img src="./img/icon/right-arrow.svg" alt="right arrow">
+          <a href="./cart.html">cart</a>
+          <img src="./img/icon/right-arrow.svg" alt="right arrow">
+          <a href="./shipping.html">Shipping</a>
+          <img src="./img/icon/right-arrow.svg" alt="right arrow">
+          <a href="./payment.html">payment</a>
+        </div>
+
+        <div class="process">
+          <a href="./cart.html">card<span>(3)</span></a>
+          <a href="./shipping.html">customer info</a>
+          <a href="./payment.html">shipping &amp; payment</a>
+          <a href="./confirmation.html">product confirmation</a>
+          <hr>
+        </div>
+
+        <div class="shipping-payment">
+          <div>
+            <div class="payment">
+              <h4>payment</h4>
+              <p>please choose a payment method</p>
+              <ul>
+                <li class="paypal-method">
+                  <input type="radio" name="pay-method" id="paypal" value="paypal" checked>
+                  <div>
+                    <div>
+                      <p>paypal</p>
+                      <span><img src="./img/ft-paypal.png" alt="paypal"></span>
+                    </div>
+                    <p>
+                      PayPal is a trusted online payment platform that allows individuals 
+                      and businesses to securely send and receive money electronically.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="mastercard-method">
+                  <input type="radio" name="pay-method" id="mastercard" value="Mmstercard">
+                  <div>
+                    <div>
+                      <p>mastercard</p>
+                      <span><img src="./img/ft-master-card.png" alt="mastercard"></span>
+                    </div>
+                    <p>
+                      PayPal is a trusted online payment platform that allows individuals 
+                      and businesses to securely send and receive money electronically.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="bitcoin-method">
+                  <input type="radio" name="pay-method" id="bitcoin" value="bitcoin">
+                  <div>
+                    <div>
+                      <p>bitcoin</p>
+                      <span><img src="./img/bitcoin.png" alt="bitcoin"></span>
+                    </div>
+                    <p>
+                      PayPal is a trusted online payment platform that allows individuals 
+                      and businesses to securely send and receive money electronically.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <div class="shipping">
+              <h4>shipping</h4>
+              <p>please choose a shipping company based on your region</p>
+              <ul>
+                <li class="shipping-method-1">
+                  <input type="radio" name="ship-method" id="AUSFF" value="AUSFF">
+                  <div>
+                    <div>
+                      <p>AUSFF</p>
+                      <span><img src="./img/ausff.png" alt="AUSFF"></span>
+                    </div>
+                    <p>Delivery time: 14-21 days</p>
+                    <p>Shipping cost: Free</p>
+                    <p>Insurance: <span>Unavailable</span></p>
+                  </div>
+                </li>
+
+                <li class="shipping-method-2">
+                  <input type="radio" name="ship-method" id="raceCouriers" value="raceCouriers" checked>
+                  <div>
+                    <div>
+                      <p>RaceCouriers</p>
+                      <span><img src="./img/raceCouriers.png" alt="RaceCouriers"></span>
+                    </div>
+                    <p>Delivery time: 14-21 days</p>
+                    <p>Shipping cost: $10</p>
+                    <p>Insurance: <span>Available</span></p>
+                  </div>
+                </li>
+
+                <li class="shipping-method-3">
+                  <input type="radio" name="ship-method" id="transcoCargo" value="transcoCargo">
+                  <div>
+                    <div>
+                      <p>TranscoCargo</p>
+                      <span><img src="./img/transcoCargo.gif" alt="TranscoCargo"></span>
+                    </div>
+                    <p>Delivery time: 14-21 days</p>
+                    <p>Shipping cost: $12</p>
+                    <p>Insurance: <span>Available</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- order summary -->
+          <aside>
+            <div class="summary">
+              <p>price <span>$99.23</span></p>
+              <p>shipping <span>$0</span></p>
+              <p>tax <span>$0</span></p>
+              <p>discount price <span>$47.10</span></p>
+              <div>
+                <input type="checkbox" name="giftBox" id="giftBox" value="giftBox" checked>
+                <label for="giftBox">pack in a gift box</label>
+              </div>
+              <p>total price <span>$110.13</span></p>
+              <button type="submit">
+                <img src="./img/icon/present.svg" alt="present">
+                <span>shop now</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+    <!-- end section 1 -->
+
+    <!-- start section 2 -->
+    <section class="sec2">
+      <div class="container">
+        <div class="sec2-top">
+          <p>you might also like</p>
+          <div>
+            <button type="button"><img src="./img/icon/Arrow-turn-l.png" alt="arrow left"></button>
+            <button type="button"><img src="./img/icon/Arrow-turn-r.png" alt="arrow right"></button>
+          </div>
+        </div>
+        
+        <div class="sec2-bottom">
+          <!-- card 1 -->
+          <div class="sec2-b-card">
+            <div class="card-img"><img src="./img/dress-1.png" alt="dress 1"></div>
+            <div class="card-detal">
+              <p>SHORT PRINTED DRESS</p>
+              <p>$69.99 <span>$129.99</span> <span>-40%</span></p>
+              <button type="button"><span>$39</span> Add to cart</button>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="sec2-b-card">
+            <div class="card-img"><img src="./img/dress-2.png" alt="dress 2"></div>
+            <div class="card-detal">
+              <p>SHORT PRINTED DRESS</p>
+              <p>$69.99 <span>$129.99</span> <span>-40%</span></p>
+              <button type="button"><span>$39</span> Add to cart</button>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="sec2-b-card">
+            <div class="card-img"><img src="./img/dress-3.png" alt="dress 3"></div>
+            <div class="card-detal">
+              <p>SHORT PRINTED DRESS</p>
+              <p>$69.99 <span>$129.99</span> <span>-40%</span></p>
+              <button type="button"><span>$39</span> Add to cart</button>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="sec2-b-card">
+            <div class="card-img"><img src="./img/dress-4.png" alt="dress 4"></div>
+            <div class="card-detal">
+              <p>SHORT PRINTED DRESS</p>
+              <p>$69.99 <span>$129.99</span> <span>-40%</span></p>
+              <button type="button"><span>$39</span> Add to cart</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end section 2 -->
+
+    <!-- start footer -->
+    <footer>
+      <!-- top footer -->
+      <div class="top-footer">
+        <ul class="t-f-list1">
+          <li><h5>company</h5></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our store</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+
+        <ul class="t-f-list2">
+          <li><h5>career opportunities</h5></li>
+          <li><a href="#">selling programs</a></li>
+          <li><a href="#">advertise</a></li>
+          <li><a href="#">cooperation</a></li>
+        </ul>
+
+        <ul class="t-f-list3">
+          <li><h5>how to buy</h5></li>
+          <li><a href="#">making payments</a></li>
+          <li><a href="#">delivery options</a></li>
+          <li><a href="#">buyer protection</a></li>
+          <li><a href="#">new user guide</a></li>
+        </ul>
+
+        <ul class="t-f-list4">
+          <li><h5>help</h5></li>
+          <li><a href="#">contacts us</a></li>
+          <li><a href="#">faq</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+
+      </div>
+
+      <!-- container -->
+      <div class="container">
+
+        <!-- bottom footer -->
+        <div class="bottom-footer">
+          <!-- bottom footer up -->
+          <div class="b-f-up">
+            <a href="#"><img src="./img/ft-visa.png" alt="visa logo"></a>
+            <a href="#"><img src="./img/ft-master-card.png" alt="master card logo"></a>
+            <a href="#"><img src="./img/ft-paypal.png" alt="paypal logo"></a>
+            <form action="#">
+              <select name="language">
+                <option value="l1">English</option>
+                <option value="l2">Arabic</option>
+                <option value="l3">Russian</option>
+              </select>
+            </form>
+            <hr>
+          </div>
+          <!-- bottom footer down -->
+          <div class="b-f-down">
+            <p>165-179 Forster Road City of Monash, Melbourne, Australia</p>
+            <p>&copy;2023 Copyright in reserved for lumine shop</p>
+            <div class="b-f-social">
+              <a href="#"><img src="./img/icon/ft-instagram.svg" alt="instagram"></a>
+              <a href="#"><img src="./img/icon/ft-facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="./img/icon/ft-telegram.svg" alt="telegram"></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+    <!-- end footer -->
+    
+    <!-- java script -->
+    <script></script>
+  </body>
+</html>
